@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+   
+    <title>Calorie Calculator</title>
+</head>
+
+<body>
+    <div class="css-lufyyr">
+        <div class="css-oo7xrh">
+
+            <div class="css-15wkbzd e1f415xm0">
+                <div class="css-1bi0gdy easyqjs0">
+                    <div class="compound__container">
+                        <div class="compound__section__intro">
+                            <div>
+                                <h1 class="compound__intro__header">Calculator calorii</h1>
+                            </div>
+                            <div class="compound__intro__paragraph">
+                                <p>Calculatorul de calorii poate fi folosit pentru a estima numărul de calorii pe care o
+                                    persoană trebuie să le consume în fiecare zi. Acest calculator poate oferi, de
+                                    asemenea, câteva linii directoare simple pentru a câștiga sau a pierde în greutate.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="compound__body">
+                            <div class="compound__section__input">
+                                <div class="css-1gynhvj e1gh5x120">
+                                    <div>
+                                        <div class="input__container">
+                                            <div class="input__label__container">
+                                                <div class="input__label" id="input-label">
+                                                    <label for="Years of Growth">Varsta</label>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="input__field__container">
+                                                <div class="input__field"><input type="number" id="input-f3" value="0" onfocus="clean(this)">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="input__container">
+                                            <div class="input__radio__container">
+                                                <div class="input__label__container">
+                                                    <div class="input__label"><label for="gender"
+                                                            class="gen">Sex</label>
+
+                                                    </div>
+                                                </div>
+                                                <form>
+
+                                                    <div class="input__radio__item">
+                                                        <input type="radio" class="input__radio__button" name="radio-bt"
+                                                            id="radio1" checked>
+                                                        <label for="radio1">Barbat</label>
+
+                                                    </div>
+                                                    <div class="input__radio__item">
+                                                        <input type="radio" class="input__radio__button" name="radio-bt"
+                                                            id="radio2">
+                                                        <label for="radio2">Femeie</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+
+                                        <div>
+                                            <div class="input__container">
+                                                <div class="input__label__container">
+                                                    <div class="input__label"><label
+                                                            for="Rate of Return">Inaltime</label>
+                                                    </div>
+                                                </div>
+                                                <div class="input__field__container">
+
+                                                    <div class="input__field"><input type="number" id="input-f4"
+                                                            value="0" onfocus="clean(this)">
+                                                        <span class="unit">cm</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="input__container">
+                                                <div class="input__label__container">
+                                                    <div class="input__label" id="input-label">
+                                                        <label for="Years of Growth">Greutate</label>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="input__field__container">
+                                                    <div class="input__field"><input type="number" value="0"
+                                                            id="input-f5" onfocus="clean(this)">
+                                                        <span class="unit">kg</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="input__container">
+                                                <div class="input__label__container">
+                                                    <div class="input__label" id="input-label">
+                                                        <label for="Years of Growth">Activitate</label>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="select">
+                                                    <select id="mySelect" onchange="getSelectedValue()">
+                                                        <option value="select">selectați o opțiune</option>
+                                                        <option value="Basal Metabollic Rate (BMR)">Rata Metabolica Bazala(RMB)</option>
+                                                        <option value="Little to No exercise">Activitate Sedentara
+                                                        </option>
+                                                        <option value="Exercise 1/3 times/week">Activitate Usoara (1h x 1-3/sapt)
+                                                        </option>
+                                                        <option value="Exercise 4/5 times/week">Activitate Medie (1h x 3-5/sapt)
+                                                        </option>
+                                                        <option
+                                                            value="Daily exercise / intense exercise 3/4 times/week">
+                                                            Activitate Grea (1h x 5-7/sapt)</option>
+                                                        <option value="Intense exercise 6/7 times/week">Activitate Foarte Grea(9h+)</option>
+                                                        <option value="Very intense exercise daily, or physical job">
+                                                            Activitate Pro 2x Zi(1h30)</option>
+
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                       
+                                     
+                                        <button class="cal-btn" id="cal">
+                                            <label>Calculati</label></button>
+                                        <button onclick="clearff()" class="cal-btn" id="clr">Reset</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <div id="result-div">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         <script src="val.js"></script>      
+</body>
+
+</html>
